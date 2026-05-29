@@ -32,6 +32,10 @@
                 <items>
                     <Button text="Add Expense" onAction="#handleAddExpense"/>
                     <Button text="Remove Expense" onAction="#handleRemoveExpense"/>
+                    <Button text="Add trip" onAction="#handleAddTrip"/>
+                    <Button text="Remove trip" onAction="#handleRemoveTrip"/>
+                        <TextField fx:id="searchField" prefWidth="200.0" promptText="Find expense ..."/>
+                        <Label fx:id="totalLabel" text="Total: 0.0"/>
                 </items>
             </ToolBar>
         </VBox>
@@ -52,10 +56,4 @@
         </TableView>
     </center>
 
-    <bottom>
-        <HBox alignment="CENTER">
-            <TextField/>
-            <Label/>
-        </HBox>
-    </bottom>
 </BorderPane>
